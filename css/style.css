@@ -14,15 +14,21 @@ body {
     font-weight: 400;
     font-size: 18px;
     background-color: rgb(97, 91, 91);
-    color: #fff;
+    color: #ffffff;
+    line-height: 1.7;
 }
 
 .theme-btn {
     display: inline-block;
     background: #4F9CF9;
     border-radius: 8px;
-    margin-left: 24px;
     padding: 16px 24px !important;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.theme-btn:hover {
+    color: #043873;
 }
 
 .theme-btn img {
@@ -33,7 +39,6 @@ body {
     display: inline-block;
     background: #FFE492;
     border-radius: 8px;
-    margin-left: 24px;
     padding: 16px 24px !important;
     color: #043873 !important;
 }
@@ -44,14 +49,28 @@ body {
     padding: 16px;
 }
 
+.header-area .navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
 .header-area .nav-link {
-    color: #ffffff !important;
+    color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     padding: 16px 24px !important;
 }
 
+.header-area .theme-btn {
+    margin-left: 24px;
+}
+
+.header-area .theme-btn-twos {
+    margin-left: 24px;
+}
+
 /* header responsive css */
+
 @media (max-width:991px) {
     .theme-btn {
         width: 100%;
@@ -69,11 +88,69 @@ body {
 
     .header-area .nav-link {
         padding: 16px 0px !important;
+        position: relative;
+    }
+
+    .header-area .nav-link::after {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header-area .theme-btn {
+        margin-left: 0px;
     }
 }
 
 @media (max-width:1399px) {
     .header-area .nav-link {
-        margin-right: 0px !important;
+        padding: 12px 20px !important;
+    }
+}
+
+@media (max-width:1199px) {
+    .header-area .nav-link {
+        font-size: 13px;
+    }
+}
+
+/* hero area css
+ */
+.hero-area {
+    background-image: url(/images/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 140px 0px;
+}
+
+.hero-text h3 {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.hero-area .theme-btn {
+    margin-top: 30px;
+}
+
+/* hero area responsive css */
+
+@media (max-width:991px) {
+    .hero-area {
+        padding: 80px 0px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h3 {
+        font-size: 36px;
+    }
+
+    .hero-area .theme-btn {
+        margin-bottom: 50px;
     }
 }
