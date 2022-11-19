@@ -227,3 +227,23 @@ body {
         margin-top: 80px;
     }
 }
+
+/* experience area css start */
+.experience-area {
+    background-color: #043873;
+}
+
+.customise-area {
+    background-color: #fff;
+}
+
+.customise-img {
+    margin-right: 60px;
+}
+
+@media (max-width:991px) {
+    .customise-img {
+        margin-bottom: 60px;
+        margin-right: 0px;
+    }
+}
